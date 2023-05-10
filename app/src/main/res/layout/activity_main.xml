@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_label_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:textSize="28sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/greeting_label"
+            android:textColor="@color/donker_100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontType="header"
+            android:textColor="@color/donker_100"
+            android:text="@string/welcome_label"
+            app:layout_constraintTop_toTopOf="@id/tv_label_greeting"
+            app:layout_constraintStart_toEndOf="@id/tv_label_greeting"
+            app:layout_constraintBottom_toBottomOf="@id/tv_label_greeting"/>
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitText
+            android:id="@+id/tv_login_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_direction_desc"
+            android:textColor="@color/donker_50"
+            app:layout_constraintStart_toStartOf="@id/tv_label_greeting"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_greeting"
+            android:layout_marginTop="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_ilus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ilus_boarding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_login_direction" />
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitTextInput
+            android:id="@+id/input_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:title="@string/email_label"
+            android:hint="@string/enter_your_email_hint"
+            android:layout_marginHorizontal="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_ilus"/>
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitTextInput
+            android:id="@+id/input_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            app:title="@string/password_label"
+            android:hint="@string/enter_your_password_hint"
+            android:layout_marginHorizontal="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_email"/>
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitButton
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_label"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawableTint="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_password"/>
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitDirectText
+            android:id="@+id/tv_direction_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:description="@string/have_not_account_label"
+            app:action_text="@string/register_now_label"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"/>
+
+        <com.banidevv.vasscomtestproject.uikit.component.UiKitText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray_50"
+            android:text="@string/copy_right_label"
+            android:drawableStart="@drawable/ic_copy_right"
+            android:drawablePadding="8dp"
+            android:layout_marginVertical="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_direction_label"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

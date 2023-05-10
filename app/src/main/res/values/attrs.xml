@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UiKitText">
+        <attr name="fontType">
+            <enum name="header" value="0" />
+            <enum name="title" value="1" />
+            <enum name="body" value="2" />
+            <enum name="caption" value="3" />
+            <enum name="subcaption" value="4" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="UiKitButton">
+        <attr name="buttonType">
+            <enum name="primary" value="0" />
+            <enum name="rounded" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="UiKitTextInput">
+        <attr name="android:hint"/>
+        <attr name="title"/>
+        <attr name="passwordToggleEnabled"/>
+    </declare-styleable>
+    <declare-styleable name="UiKitDirectText">
+        <attr name="description"/>
+        <attr name="action_text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="UiKitTab">
+        <attr name="tabs_string" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="UiKitFilter">
+        <attr name="buttons_string" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="UiKitPosterCard">
+        <attr name="direction" format="enum">
+            <enum name="ltr" value="0"/>
+            <enum name="rtl" value="1"/>
+        </attr>
+        <attr name="android:src"/>
+        <attr name="title"/>
+        <attr name="description"/>
+        <attr name="actionTitle" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="UiKitDirectOption">
+        <attr name="title"/>
+    </declare-styleable>
+</resources>
